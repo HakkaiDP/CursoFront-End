@@ -1,0 +1,34 @@
+body{
+    background-color: #000;
+}
+
+.container{
+    height: 180px;
+    border: red solid 4px;
+    display: flex;
+    flex-direction: column;
+    /*
+    
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    Diferença entre os spaces:
+        space-between: Sem espaço nas extremidades.
+        space-around: Espaço igual nas extremidades e entre os itens
+        (metade do espaço entre os itens nas extremidades).
+        space-evenly: Espaço igual entre todos os itens, incluindo as extremidades.
+
+    */
+    justify-content: flex-start;
+}
+
+.container > div{
+    padding: 4px;
+    margin: 4px;
+    color: #fff;
+    border: 4px solid #fff;
+}

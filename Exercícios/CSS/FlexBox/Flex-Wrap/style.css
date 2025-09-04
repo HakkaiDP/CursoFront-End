@@ -1,0 +1,30 @@
+body{
+    background-color: #000;
+}
+
+.container{
+    height: 180px;
+    width: 150px;
+    border: red solid 4px;
+    display: flex;
+    /*
+        flex-direction: column;
+        flex-direction: row;
+        ambos tem reverse.
+
+        flex-wrap: wrap; (empacotar itens)
+        flex-wrap: wrap-reverse; (empacotar itens na ordem inversa)
+        flex-wrap: nowrap; (itens não empacotados (padrão))
+        empacotar itens.
+
+        flex-flox = consegue aplicar todas as propriedades citadas de uma vez.
+    */
+    flex-flow: column wrap;
+}
+
+.container > div{
+    padding: 4px;
+    margin: 4px;
+    color: #fff;
+    border: 4px solid #fff;
+}

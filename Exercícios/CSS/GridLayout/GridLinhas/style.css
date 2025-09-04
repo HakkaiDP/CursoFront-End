@@ -1,0 +1,26 @@
+body{
+    font-size: 3rem;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 3px solid red;
+}
+
+.grid{
+    height: 100vh;
+    display: grid;
+    border: 3px solid blue;
+
+    /*
+        grid-template-rows: mesmas propriedades do grid-template-columns
+    */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+
+}
+
+.grid > div{
+    border: 3px solid yellowgreen;
+}

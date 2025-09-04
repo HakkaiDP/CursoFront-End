@@ -1,0 +1,48 @@
+body{
+    font-size: 3rem;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.item5{
+
+    /*
+    grid-column-start = linha de começo do item
+    grid-column-end = linha final do item
+
+    grid-row-start = linha de começo do item
+    grid-row-end = linha final do item
+
+    exemplo para columns:
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    exemplo para rows:
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    exemplo com os dois aplicados:
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    */
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.grid > div{
+    border: 3px solid yellowgreen;
+}

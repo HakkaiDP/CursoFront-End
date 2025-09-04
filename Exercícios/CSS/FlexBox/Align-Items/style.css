@@ -1,0 +1,86 @@
+body{
+    background-color: #000;
+}
+
+h2{
+    color: #fff;
+}
+
+.container-f{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-row{
+    height: 300px;
+    width: 500px;
+    border: red solid 4px;
+    display: flex;
+    flex-direction: row;
+    /* Row -> MainAxis(Horizontal)
+        Column -> MainAxis(Vertical)
+    */
+    justify-content: center;
+    align-items: flex-end;
+    /*
+        align-items: stretch;
+        stretch = padrao (estica o item para preencher o container).
+
+        align-items: flex-start;
+        flex-start = alinha no topo do cross axis.
+
+        align-items: flex-end;
+        flex-end = alinha no final do cross axis.
+
+        align-items: center;
+        center = alinha no centro do cross axis.
+
+        align-items: baseline;
+        baseline = Os itens são alinhados de acordo com a linha de base do texto,
+        o que é útil para garantir que textos em diferentes itens estejam alinhados.
+    */
+
+}
+
+.container-column{
+    height: 300px;
+    width: 500px;
+    border: red solid 4px;
+    display: flex;
+    flex-direction: column;
+    /* Row -> MainAxis(Horizontal)
+        Column -> CrossAxis(Vertical)
+    */
+    justify-content: center;
+    align-items: flex-end;
+    /*
+        align-items: stretch;
+        stretch = padrao (estica o item para preencher o container).
+
+        align-items: flex-start;
+        flex-start = alinha no topo do cross axis.
+
+        align-items: flex-end;
+        flex-end = alinha no final do cross axis.
+
+        align-items: center;
+        center = alinha no centro do cross axis.
+
+        align-items: baseline;
+        baseline = Os itens são alinhados de acordo com a linha de base do texto,
+        o que é útil para garantir que textos em diferentes itens estejam alinhados.
+    */
+
+}
+
+
+.grande{
+    font-size: 3rem;
+}
+
+.container-column > div, .container-row > div{
+    padding: 4px;
+    margin: 4px;
+    color: #fff;
+    border: 4px solid #fff;
+}

@@ -1,0 +1,50 @@
+body{
+    font-size: 3rem;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    /*
+
+    grid-template-columns: 200px 200px 200px;
+    definindo 200px para cada coluna (3 colunas)
+
+    grid-template-columns: 40% 40% 20%;
+    definindo 40% para 2 colunas e 20% para 1 
+    
+    grid-template-columns: repeat(4, 25%);
+    repetindo 25% para 4 colunas
+
+    grid-template-columns: repeat(2, 20%) 200px;
+    repetindo 20% para 2 colunas + 1 coluna de 200px
+
+    grid-template-columns: 1fr 1fr 1fr;
+    3 colunas com 1 fração do espaço total da tela
+
+    grid-template-columns: 20% 1fr 1fr;
+    1 coluna com 20% e 2 colunas com 1 fração do espaço restante
+
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    repetindo 1 fração para 2 colunas e 2 frações para outra
+
+    grid-template-columns: 1fr 2fr 4fr;
+    1 fração para uma, 2 frações para a outra e 4 frações para a outra
+
+    grid-template-columns: 1fr 2fr auto;
+    1 fração para uma, 2 frações para a outra e o auto para preencher o restante com outra coluna
+    
+    grid-template-columns: 20% 20% auto auto;
+    20% para uma, 20% para a outra e o auto para preencher o restante com outras colunas
+    */
+
+    grid-template-columns: 20% 20% auto auto;
+
+}
+
+.grid > div{
+    border: 3px solid yellowgreen;
+}

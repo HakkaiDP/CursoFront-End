@@ -1,0 +1,56 @@
+body{
+    background-color: #000;
+}
+
+h2{
+    color: #fff;
+}
+
+.container-f{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    height: 300px;
+    width: 500px;
+    border: red solid 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item2, .item4{
+    flex: 1 1 200px;
+    
+    /*
+    order:
+    Define a ordem de exibição dos itens na flexbox de acordo com o número fornecido.
+    se vc coloca order -1 e outro 1 o 1 vai ser exibido na frente, por mais que no body
+    ele esteja depois
+    */
+
+    order: 1;
+}
+
+.item1, .item3{
+    flex: 2 2 200px;
+    order: 2;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.column{
+  height: 300px;
+  flex-direction: column;
+}
+
+.container > div{
+    font-size: 2rem;
+    padding: 4px;
+    margin: 4px;
+    color: #fff;
+    border: 4px solid #fff;
+}
